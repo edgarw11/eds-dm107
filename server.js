@@ -9,13 +9,13 @@ var conn_str = "Driver={SQL Server Native Client 10.0};tcp:eds-dm106-exemplo3a-d
 
 http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  sql.open(conn_str, function (err, conn) {
+  /*sql.open(conn_str, function (err, conn) {
     if (err) {
         res.end("Error opening the connection!");
         return;
     }
     else
         res.end("Successfuly connected");
-	}); 
-  //res.end('Hello Edgar! :)\n');
+	}); */
+  res.end('Hello Edgar! :)\n');
 }).listen(port);
